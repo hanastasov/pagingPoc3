@@ -1,0 +1,35 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.group_1 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  width: 143px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 143px;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+}
+.paginator {
+  flex-grow: 1;
+}

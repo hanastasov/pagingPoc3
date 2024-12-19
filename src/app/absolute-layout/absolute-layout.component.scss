@@ -1,0 +1,39 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  width: 851px;
+  min-width: 851px;
+  max-width: 851px;
+}
+.group_1 {
+  position: relative;
+  width: 160px;
+  height: 74px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 160px;
+  max-height: 74px;
+}
+.button {
+  --ig-size: var(--ig-size-medium);
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: max-content;
+}
+.paginator {
+  flex-grow: 1;
+}

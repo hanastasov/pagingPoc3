@@ -1,0 +1,35 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.card {
+  width: 320px;
+  height: max-content;
+  min-width: 320px;
+  max-width: 320px;
+  flex-shrink: 0;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.paginator {
+  flex-grow: 1;
+}
+.button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}

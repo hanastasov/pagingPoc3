@@ -1,0 +1,39 @@
+<div class="row-layout group">
+  @for (item of paginator_Data_Request?.items!; track item) {
+    <igx-card class="card">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          {{ item.name }}
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          {{ item.description }}
+        </h5>
+      </igx-card-header>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="flat" type="button" igxRipple class="button">
+            {{ item.categoryId }}
+          </button>
+        </ng-container>
+        <ng-container igxEnd>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              favorite
+            </igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              bookmark
+            </igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              share
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+  }
+  <igx-paginator [perPage]="paginator_Page_Size" [totalRecords]="paginator_Data_Request?.totalRecordsCount || 0" [page]="paginator_Page_Index" (perPageChange)="paginatorPerPageChange($event)" (pageChange)="paginatorPageChange($event)" class="paginator"></igx-paginator>
+</div>

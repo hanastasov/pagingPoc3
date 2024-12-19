@@ -1,0 +1,10 @@
+<div class="row-layout group">
+  @for (item of paginator_Data_Request2?.items!; track item) {
+    <div class="row-layout group_1">
+      <p class="text">
+        {{ item.name }}
+      </p>
+    </div>
+  }
+  <igx-paginator [perPage]="paginator_Page_Size2" [totalRecords]="paginator_Data_Request2?.totalRecordsCount || 0" [page]="paginator_Page_Index2" (perPageChange)="paginatorPerPageChange($event)" (pageChange)="paginatorPageChange($event)" class="paginator"></igx-paginator>
+</div>
